@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+        <title>naxu | prestamos</title>
+
+        <!--CDN´s-->
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/estilos_calculadora.css" />
+
+        <!-- Iconografías Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <img src="img/logo_naxu.svg" alt="logo naxu" />
+                    <!-- <img src="img/logo_naxu_movil.svg" alt="logo naxu movil" class="logo_movil">-->
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="index.html" target="_self">
+                            <img src="img/menu/logo_home.svg" alt="home" />
+                            <p>Inicio</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nomina.html" target="_Self">
+                            <img src="img/menu/logo_recibonomina.svg" alt="recibos de nomina" />
+                            <p>Recibos de Nómina</p>
+                        </a>
+                    </li>
+
+                    <li class="active">
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <img src="img/menu/logo_creditos_hover.svg" alt="creditos" />
+                            <i class="fa fa-chevron-down"></i>
+                            <p>Créditos</p>
+                        </a>
+                        <ul class="collapse show list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="prestamos.html" target="_Self">
+                                    <p class="subItem actived"><i class="fa fa-chevron-right" id="oc"></i>Prestamos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="anticipos.html">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Anticipos</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="vacaciones.html">
+                            <img src="img/menu/logo_vacaciones.svg" alt="vacaciones" />
+                            <p>Vacaciones</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#segurosSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <img src="img/menu/logo_seguros.svg" alt="seguros" />
+                            <i class="fa fa-chevron-down"></i>
+                            <p>Seguros</p>
+                        </a>
+                        <ul class="collapse list-unstyled" id="segurosSubmenu">
+                            <li>
+                                <a href="seguros.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Mis seguros</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="adquirir_seguros.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Adquirir seguros</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="beneficios.html" target="_self">
+                            <img src="img/menu/logo_Beneficios.svg" alt="beneficios" />
+                            <p>Beneficios</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="asistencia.html" target="_self">
+                            <img src="img/menu/logo_Asistencia.svg" alt="asistencia" />
+                            <p>Asistencia</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tiendaSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <img src="img/menu/logo_tienda.svg" alt="Tienda virtual" />
+                            <i class="fa fa-chevron-down"></i>
+                            <p>Tienda Virtual</p>
+                        </a>
+                        <ul class="collapse list-unstyled" id="tiendaSubmenu">
+                            <li>
+                                <a href="productos.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Productos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mis_pedidos.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Mis pedidos</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contacto.html" target="_self">
+                            <img src="img/menu/logo_Contacto.svg" alt="contactoa" />
+                            <p>Contácto</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="loging.html" target="_self">
+                            <img src="img/menu/logo_salir.svg" alt="salira" />
+                            <p>Salir</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content  -->
+            <div id="content">
+                <div class="container-fluid">
+                    <!--version movil-->
+                    <div class="row barraMovil">
+                        <div class="col-2 col-md-2 iconoAling">
+                            <button type="button" class="sidebarCollapse">
+                                <img src="img/menu/btn_menu.svg" alt="menu btn" />
+                            </button>
+                        </div>
+                        <div class="col-7 col-md-8"></div>
+                        <div class="col-2 col-md-2">
+                            <img src="img/company_name_bco.svg" alt="Logo naxus" class="naxus_logo_movil" />
+                        </div>
+                    </div>
+
+                    <!--version desktop-->
+                    <div class="row barraDesktop">
+                        <div class="col-10 col-md-10">
+                            <h1 class="Bienv">¡Bienvenido!</h1>
+                            <p class="Usua">Luis Enrique Beltrán Rivera</p>
+                        </div>
+                        <div class="col-1 col-md-2">
+                            <img src="img/company_name.svg" alt="Logo de company" />
+                        </div>
+                    </div>
+
+                    <div class="row barraDesktop02">
+                        <div class="col-10 col-md-10">
+                            <h1 class="Bienv">¡Bienvenido!</h1>
+                            <p class="Usua">Luis Enrique Beltrán Rivera</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- inicia cuerpo del documento -->
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <img src="img/logos_cuerpo/logo_cuerpo_calculadora_prestamos.svg" alt="imagen solicitar credito" class="imgEncabzPrest" />
+                                    <h3 class="encabz">Calculadora de prestamos</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="solCred01">
+                                        <h3>Selecciona el monto del préstamo</h3>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p>Cantidad a prestar</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span class="variable pct02">$15,000</span>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="col-12 col-md-12 row align-item-center justify-content-center">
+                                            <div class="circular-progress">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-labelledby="title" role="graphic">
+                                                    <title id="title">svg circular progress bar</title>
+                                                    <circle cx="50" cy="50" r="40"></circle>
+                                                    <circle cx="50" cy="50" r="40" id="pct-ind"></circle>
+                                                </svg>
+
+                                                <p class="pct">70,000 MXN</p>
+                                            </div>
+
+                                            <label for="slider" class="sr-only">range slider</label>
+                                            <input type="range" class="custom-range" id="slider" value="70" />
+                                        </div>
+                                        <br />
+                                        <div class="row calcRang">
+                                            <div class="col-md-6">
+                                                <p class="izq"><i class="fas fa-circle"></i>Mínimo</p>
+                                                <p class="izq01">$5,000 MXN</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="der"><i class="fas fa-circle"></i>Máxico</p>
+                                                <p class="der01">$100,000 MXN</p>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="solCred01">
+                                        <h3>Selecciona el monto del préstamo</h3>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p>Numero de plazos</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <span class="variable pct_plazos02">14 Quincenas</span>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                        <div class="col-12 col-md-12 row align-item-center justify-content-center">
+                                            <div class="circular-progress_plazos">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-labelledby="title" role="graphic">
+                                                    <title id="title">svg circular progress bar</title>
+                                                    <circle cx="50" cy="50" r="40"></circle>
+                                                    <circle cx="50" cy="50" r="40" id="pct_plazos-ind"></circle>
+                                                </svg>
+
+                                                <p class="pct_plazos">14 Quincenas</p>
+                                            </div>
+
+                                            <label for="slider_plazos" class="sr-only">range slider</label>
+                                            <input type="range" class="custom-range" id="slider_plazos" value="10" />
+                                        </div>
+                                        <br />
+                                        <div class="row calcRang">
+                                            <div class="col-md-6">
+                                                <p class="izqQ"><i class="fas fa-circle"></i>Mínimo</p>
+                                                <p class="izq01">0 Quincenas</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="derQ"><i class="fas fa-circle"></i>Máxico</p>
+                                                <p class="der01">24 Quincenas</p>
+                                            </div>
+                                        </div>
+                                        <hr />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="spaCbzPrest">
+                                        <img src="img/logos_cuerpo/logo_cuerpo_mi_prestamo.svg" alt="Mi prestamo" class="imgEncabzPrest01" />
+                                        <h3 class="encabz">Mi prestamo</h3>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="infoUsuaPrest">
+                                        <h3>RESUMEN DEL PRESTAMO</h3>
+                                        <hr />
+                                        <p>Monto del prestamo</p>
+                                        <p class="variable"><span>$35,000</span> MXN</p>
+                                        <br />
+                                        <p>Plazos a pagar el préstamo</p>
+                                        <p class="variable"><span>5</span> Quincenas</p>
+                                        <br />
+                                        <form role="form">
+                                            <div class="checkbox">
+                                                <input type="checkbox" />
+                                                <a href="#" class="termCond">Acepto solicitar el préstamo en los términos seleccionados</a>
+                                            </div>
+                                            <a href="#" class="btn btn-block btn-primary enlace">Solicitar préstamo</a>
+                                            <br />
+                                            <a href="#" class="btn btn-block btn-primary enlace02">Ver plazos de pago</a>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid fot">
+            <div class="row">
+                <div class="col-6 col-md-3 col-lg-2 cjadress">
+                    <address>
+                        <strong>Contácto</strong><br />
+                        <abbr title="Telefono">Tel:</abbr> 800.234.5674<br />
+                        Mail:info@naxu.com.mx <br />
+                        NAXU© 2020
+                    </address>
+                </div>
+                <div class="col-6 col-md-2 col-lg-2">
+                    <img src="img/company_name_byn.svg" alt="companylogo" />
+                </div>
+                <div class="col-12 col-md-7 col-lg-8">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellendus suscipit optio velit doloremque consectetur nisi eos iure, voluptatum eum nesciunt alias totam officiis esse soluta quod provident natus
+                        maiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sint similique officiis ducimus dolorum, non magni iusto voluptates natus doloremque quam cumque expedita quos et ratione! Porro quisquam
+                        assumenda rerum.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".sidebarCollapse").on("click", function () {
+                    $("#sidebar").toggleClass("active");
+                });
+            });
+        </script>
+        <script src="js/script_calc.js"></script>
+    </body>
+</html>

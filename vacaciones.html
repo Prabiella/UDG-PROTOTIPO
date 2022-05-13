@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+        <title>naxu | vacaciones</title>
+
+        <!--CDN´s-->
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <!-- Estilos CSS -->
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <!-- Iconografías Font Awesome JS -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <img src="img/logo_naxu.svg" alt="logo naxu" />
+                    <!-- <img src="img/logo_naxu_movil.svg" alt="logo naxu movil" class="logo_movil">-->
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="index.html" target="_self">
+                            <img src="img/menu/logo_home.svg" alt="home" />
+                            <p>Inicio</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="nomina.html" target="_Self">
+                            <img src="img/menu/logo_recibonomina.svg" alt="recibos de nomina" />
+                            <p>Recibos de Nómina</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <img src="img/menu/logo_creditos.svg" alt="creditos" />
+                            <i class="fa fa-chevron-down"></i>
+                            <p>Créditos</p>
+                        </a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="prestamos.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Prestamos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="anticipos.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Anticipos</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="vacaciones.html" target="_self">
+                            <img src="img/menu/logo_vacaciones_hover.svg" alt="vacaciones" />
+                            <p>Vacaciones</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#segurosSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <img src="img/menu/logo_seguros.svg" alt="seguros" />
+                            <i class="fa fa-chevron-down"></i>
+                            <p>Seguros</p>
+                        </a>
+                        <ul class="collapse list-unstyled" id="segurosSubmenu">
+                            <li>
+                                <a href="seguros.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Mis seguros</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="adquirir_seguros.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Adquirir seguros</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="beneficios.html" target="_self">
+                            <img src="img/menu/logo_Beneficios.svg" alt="beneficios" />
+                            <p>Beneficios</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="asistencia.html" target="_self">
+                            <img src="img/menu/logo_Asistencia.svg" alt="asistencia" />
+                            <p>Asistencia</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tiendaSubmenu" data-toggle="collapse" aria-expanded="false">
+                            <img src="img/menu/logo_tienda.svg" alt="Tienda virtual" />
+                            <i class="fa fa-chevron-down"></i>
+                            <p>Tienda Virtual</p>
+                        </a>
+                        <ul class="collapse list-unstyled" id="tiendaSubmenu">
+                            <li>
+                                <a href="productos.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Productos</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mis_pedidos.html" target="_self">
+                                    <p class="subItem"><i class="fa fa-chevron-right" id="oc"></i>Mis pedidos</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contacto.html" target="_self">
+                            <img src="img/menu/logo_Contacto.svg" alt="contactoa" />
+                            <p>Contácto</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="loging.html" target="_self">
+                            <img src="img/menu/logo_salir.svg" alt="salira" />
+                            <p>Salir</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Page Content  -->
+            <div id="content">
+                <div class="container-fluid">
+                    <!--version movil-->
+                    <div class="row barraMovil">
+                        <div class="col-2 col-md-2 iconoAling">
+                            <button type="button" class="sidebarCollapse">
+                                <img src="img/menu/btn_menu.svg" alt="menu btn" />
+                            </button>
+                        </div>
+                        <div class="col-7 col-md-8"></div>
+                        <div class="col-2 col-md-2">
+                            <img src="img/company_name_bco.svg" alt="Logo naxus" class="naxus_logo_movil" />
+                        </div>
+                    </div>
+
+                    <!--version desktop-->
+                    <div class="row barraDesktop">
+                        <div class="col-10 col-md-10">
+                            <h1 class="Bienv">¡Bienvenido!</h1>
+                            <p class="Usua">Luis Enrique Beltrán Rivera</p>
+                        </div>
+                        <div class="col-1 col-md-2">
+                            <img src="img/company_name.svg" alt="Logo de company" />
+                        </div>
+                    </div>
+
+                    <div class="row barraDesktop02">
+                        <div class="col-10 col-md-10">
+                            <h1 class="Bienv">¡Bienvenido!</h1>
+                            <p class="Usua">Luis Enrique Beltrán Rivera</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- inicia cuerpo del documento -->
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <!--modulo Días disponibles-->
+                        <div class="col-12 col-md-12 col-lg-4">
+                            <div class="spaCbz">
+                                <img src="img/logos_cuerpo/logo_cuerpo_calendario.svg" alt="Dias disponibles" class="imgEncabz" />
+                                <h3 class="encabz">Días disponibles</h3>
+                            </div>
+                            <div class="diasDisp">
+                                <div class="col-md-12">
+                                    <h3>
+                                        10 días
+                                    </h3>
+                                    <p>Disfrútalas antes del: 01 Enero de 2021</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--modulo solicita vacaciones-->
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <img src="img/logos_cuerpo/logo_cuerpo_vacaciones.svg" alt="Dias disponibles" class="imgEncabzVaca" />
+                            <h3 class="encabz">Solicita aquí tus vacaciones</h3>
+
+                            <div class="infoUsua">
+                                <form>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-6">
+                                                <label>Fecha de inicio</label>
+                                                <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control" />
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-lg-6">
+                                                <label>Fecha de termino</label>
+                                                <input type="date" name="bday" max="3000-12-31" min="1000-01-01" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="row diasSoli">
+                                <div class="col-12 col-md-12">
+                                    <p>Has solicitado <span> 5 </span> días de vacaciones</p>
+                                    <a href="#" class="btn btn-block btn-primary enlace">Enviar solicitud</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row bannerVaca">
+                    <div class="col-md-12">
+                        <img src="img/banner_vacaciones.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid fot">
+            <div class="row">
+                <div class="col-6 col-md-3 col-lg-2 cjadress">
+                    <address>
+                        <strong>Contácto</strong><br />
+                        <abbr title="Telefono">Tel:</abbr> 800.234.5674<br />
+                        Mail:info@naxu.com.mx <br />
+                        NAXU© 2020
+                    </address>
+                </div>
+                <div class="col-6 col-md-2 col-lg-2">
+                    <img src="img/company_name_byn.svg" alt="companylogo" />
+                </div>
+                <div class="col-12 col-md-7 col-lg-8">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellendus suscipit optio velit doloremque consectetur nisi eos iure, voluptatum eum nesciunt alias totam officiis esse soluta quod provident natus
+                        maiores Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, sint similique officiis ducimus dolorum, non magni iusto voluptates natus doloremque quam cumque expedita quos et ratione! Porro quisquam
+                        assumenda rerum.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".sidebarCollapse").on("click", function () {
+                    $("#sidebar").toggleClass("active");
+                });
+            });
+        </script>
+    </body>
+</html>
